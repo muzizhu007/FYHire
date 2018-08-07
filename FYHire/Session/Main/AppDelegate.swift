@@ -16,8 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        gotoLoginViewController()
         
+       //gotoLoginViewController()
+        gotoHomeMainController() 
         return true
     }
 
@@ -46,6 +47,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func gotoLoginViewController() {
         let loginVC = FYHAccountLoginViewController.viewController()
         window?.rootViewController = loginVC
+    }
+    
+    func gotoHomeMainController()  {
+        let mainVC = ViewController.viewController()
+        window?.rootViewController = mainVC
     }
 }
 

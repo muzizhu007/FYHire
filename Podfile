@@ -9,6 +9,6 @@ target 'FYHire' do
     pod 'Kingfisher'
     #    pod 'FSPagerView'
     pod 'SVProgressHUD'
-    pod 'SwiftyUserDefaults', '4.0.0-alpha.1'
-    pod 'IQKeyboardManagerSwift'
+    #   pod 'SwiftyUserDefaults'
+    #   pod 'IQKeyboardManagerSwift'
 end
