@@ -14,15 +14,60 @@
             <objects>
                 <viewController storyboardIdentifier="FYHHomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uBF-MF-Sof" customClass="FYHHomeViewController" customModule="FYHire" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5ks-p3-xOM">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkW-dg-g05">
+                                <rect key="frame" x="0.0" y="20" width="375" height="980"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_banner1_CH" translatesAutoresizingMaskIntoConstraints="NO" id="6pp-6L-ddj">
+                                        <rect key="frame" x="8" y="0.0" width="359" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="i3Q-f6-CYm"/>
+                                        </constraints>
+                                    </imageView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13I-u8-fFQ">
+                                        <rect key="frame" x="8" y="220" width="359" height="128"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="7dH-5t-YYG"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6pp-6L-ddj" firstAttribute="top" secondItem="pkW-dg-g05" secondAttribute="top" id="80D-qf-g1U"/>
+                                    <constraint firstItem="6pp-6L-ddj" firstAttribute="centerX" secondItem="pkW-dg-g05" secondAttribute="centerX" id="Aps-te-3hF"/>
+                                    <constraint firstItem="6pp-6L-ddj" firstAttribute="leading" secondItem="pkW-dg-g05" secondAttribute="leading" constant="8" id="SA9-1L-94h"/>
+                                    <constraint firstAttribute="bottom" secondItem="6pp-6L-ddj" secondAttribute="bottom" constant="780" id="YvZ-Ii-DWa"/>
+                                    <constraint firstItem="13I-u8-fFQ" firstAttribute="leading" secondItem="6pp-6L-ddj" secondAttribute="leading" id="dyp-Aa-yOD"/>
+                                    <constraint firstItem="13I-u8-fFQ" firstAttribute="trailing" secondItem="6pp-6L-ddj" secondAttribute="trailing" id="mT0-Ed-M5P"/>
+                                    <constraint firstItem="13I-u8-fFQ" firstAttribute="top" secondItem="6pp-6L-ddj" secondAttribute="bottom" constant="20" id="v5P-Ei-Oby"/>
+                                    <constraint firstAttribute="trailing" secondItem="6pp-6L-ddj" secondAttribute="trailing" constant="8" id="ym1-RC-hkW"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
+                                        <size key="value" width="375" height="1000"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="veE-P7-EO7" firstAttribute="bottom" secondItem="pkW-dg-g05" secondAttribute="bottom" id="LQq-Mx-zUp"/>
+                            <constraint firstItem="veE-P7-EO7" firstAttribute="trailing" secondItem="pkW-dg-g05" secondAttribute="trailing" id="X2O-WK-kOj"/>
+                            <constraint firstItem="pkW-dg-g05" firstAttribute="leading" secondItem="veE-P7-EO7" secondAttribute="leading" id="gdR-r0-9r4"/>
+                            <constraint firstItem="pkW-dg-g05" firstAttribute="top" secondItem="veE-P7-EO7" secondAttribute="top" id="pXg-LG-E0J"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="veE-P7-EO7"/>
                     </view>
+                    <size key="freeformSize" width="375" height="1000"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mk5-dX-SQt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="106" y="170"/>
+            <point key="canvasLocation" x="104.8" y="169.11544227886057"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="login_banner1_CH" width="750" height="400"/>
+    </resources>
 </document>
