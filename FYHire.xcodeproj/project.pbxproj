@@ -12,6 +12,11 @@
 		844E5656211818210058EFCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844E5654211818210058EFCE /* Main.storyboard */; };
 		844E5658211818230058EFCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 844E5657211818230058EFCE /* Assets.xcassets */; };
 		844E565B211818230058EFCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844E5659211818230058EFCE /* LaunchScreen.storyboard */; };
+		84D26F502119324900F41EC5 /* FYUnderLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D26F4F2119324900F41EC5 /* FYUnderLineTextField.swift */; };
+		84D26F54211934B700F41EC5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D26F53211934B700F41EC5 /* BaseViewController.swift */; };
+		84D26F56211934F100F41EC5 /* FYH-Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D26F55211934F100F41EC5 /* FYH-Account.storyboard */; };
+		84D26F582119352C00F41EC5 /* FYHAccountLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D26F572119352C00F41EC5 /* FYHAccountLoginViewController.swift */; };
+		84D26F5C2119762500F41EC5 /* UIButton-FYHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D26F5B2119762500F41EC5 /* UIButton-FYHExtension.swift */; };
 		EF31D7BC80AE16F05ECEE2D4 /* Pods_FYHire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3925437C1FBBB8B8551DABAD /* Pods_FYHire.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +30,11 @@
 		844E5657211818230058EFCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		844E565A211818230058EFCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		844E565C211818230058EFCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D26F4F2119324900F41EC5 /* FYUnderLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYUnderLineTextField.swift; sourceTree = "<group>"; };
+		84D26F53211934B700F41EC5 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		84D26F55211934F100F41EC5 /* FYH-Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "FYH-Account.storyboard"; sourceTree = "<group>"; };
+		84D26F572119352C00F41EC5 /* FYHAccountLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHAccountLoginViewController.swift; sourceTree = "<group>"; };
+		84D26F5B2119762500F41EC5 /* UIButton-FYHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton-FYHExtension.swift"; sourceTree = "<group>"; };
 		D57A2149658D8D4D9805E849 /* Pods-FYHire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYHire.release.xcconfig"; path = "Pods/Target Support Files/Pods-FYHire/Pods-FYHire.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,14 +71,67 @@
 		844E564F211818210058EFCE /* FYHire */ = {
 			isa = PBXGroup;
 			children = (
-				844E5650211818210058EFCE /* AppDelegate.swift */,
-				844E5652211818210058EFCE /* ViewController.swift */,
-				844E5654211818210058EFCE /* Main.storyboard */,
+				84D26F4C2119316A00F41EC5 /* Session */,
+				84D26F4B2119315C00F41EC5 /* Common */,
 				844E5657211818230058EFCE /* Assets.xcassets */,
-				844E5659211818230058EFCE /* LaunchScreen.storyboard */,
 				844E565C211818230058EFCE /* Info.plist */,
 			);
 			path = FYHire;
+			sourceTree = "<group>";
+		};
+		84D26F4B2119315C00F41EC5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				84D26F522119346700F41EC5 /* Controller */,
+				84D26F4E2119320D00F41EC5 /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		84D26F4C2119316A00F41EC5 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				84D26F512119344900F41EC5 /* Account */,
+				84D26F4D2119317A00F41EC5 /* Main */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		84D26F4D2119317A00F41EC5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				844E5652211818210058EFCE /* ViewController.swift */,
+				844E5650211818210058EFCE /* AppDelegate.swift */,
+				844E5654211818210058EFCE /* Main.storyboard */,
+				844E5659211818230058EFCE /* LaunchScreen.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		84D26F4E2119320D00F41EC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84D26F4F2119324900F41EC5 /* FYUnderLineTextField.swift */,
+				84D26F5B2119762500F41EC5 /* UIButton-FYHExtension.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84D26F512119344900F41EC5 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				84D26F55211934F100F41EC5 /* FYH-Account.storyboard */,
+				84D26F572119352C00F41EC5 /* FYHAccountLoginViewController.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		84D26F522119346700F41EC5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84D26F53211934B700F41EC5 /* BaseViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		D67050C345525AA470DCD1E7 /* Frameworks */ = {
@@ -150,6 +213,7 @@
 			files = (
 				844E565B211818230058EFCE /* LaunchScreen.storyboard in Resources */,
 				844E5658211818230058EFCE /* Assets.xcassets in Resources */,
+				84D26F56211934F100F41EC5 /* FYH-Account.storyboard in Resources */,
 				844E5656211818210058EFCE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,7 +247,6 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FYHire/Pods-FYHire-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/FSPagerView/FSPagerView.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
@@ -195,7 +258,6 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSPagerView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
@@ -216,8 +278,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D26F582119352C00F41EC5 /* FYHAccountLoginViewController.swift in Sources */,
 				844E5653211818210058EFCE /* ViewController.swift in Sources */,
+				84D26F54211934B700F41EC5 /* BaseViewController.swift in Sources */,
+				84D26F5C2119762500F41EC5 /* UIButton-FYHExtension.swift in Sources */,
 				844E5651211818210058EFCE /* AppDelegate.swift in Sources */,
+				84D26F502119324900F41EC5 /* FYUnderLineTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
