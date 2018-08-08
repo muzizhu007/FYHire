@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.14" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14295.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14270.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,32 +18,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkW-dg-g05">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkW-dg-g05">
                                 <rect key="frame" x="0.0" y="20" width="375" height="980"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_banner1_CH" translatesAutoresizingMaskIntoConstraints="NO" id="6pp-6L-ddj">
-                                        <rect key="frame" x="8" y="0.0" width="359" height="200"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_banner_one" translatesAutoresizingMaskIntoConstraints="NO" id="6pp-6L-ddj">
+                                        <rect key="frame" x="15" y="0.0" width="345" height="181"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="200" id="i3Q-f6-CYm"/>
+                                            <constraint firstAttribute="height" constant="181" id="i3Q-f6-CYm"/>
                                         </constraints>
                                     </imageView>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="13I-u8-fFQ">
-                                        <rect key="frame" x="8" y="220" width="359" height="128"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <rect key="frame" x="15" y="191" width="345" height="128"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="7dH-5t-YYG"/>
                                         </constraints>
                                     </scrollView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Za-77-YP6" customClass="FYHHomeSectionView" customModule="FYHire" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="329" width="375" height="467"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="467" id="0rZ-wH-vcZ"/>
+                                            <constraint firstAttribute="width" constant="375" id="Jta-w2-d2E"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="6pp-6L-ddj" firstAttribute="top" secondItem="pkW-dg-g05" secondAttribute="top" id="80D-qf-g1U"/>
-                                    <constraint firstItem="6pp-6L-ddj" firstAttribute="centerX" secondItem="pkW-dg-g05" secondAttribute="centerX" id="Aps-te-3hF"/>
-                                    <constraint firstItem="6pp-6L-ddj" firstAttribute="leading" secondItem="pkW-dg-g05" secondAttribute="leading" constant="8" id="SA9-1L-94h"/>
+                                    <constraint firstItem="13I-u8-fFQ" firstAttribute="leading" secondItem="6pp-6L-ddj" secondAttribute="leading" id="AHl-Y1-bxc"/>
+                                    <constraint firstItem="13I-u8-fFQ" firstAttribute="trailing" secondItem="6pp-6L-ddj" secondAttribute="trailing" id="AYj-XW-7Je"/>
+                                    <constraint firstItem="13I-u8-fFQ" firstAttribute="trailing" secondItem="6pp-6L-ddj" secondAttribute="trailing" id="Cra-so-LPJ"/>
+                                    <constraint firstItem="6Za-77-YP6" firstAttribute="leading" secondItem="pkW-dg-g05" secondAttribute="leading" id="IK1-ho-FRk"/>
+                                    <constraint firstItem="6Za-77-YP6" firstAttribute="top" secondItem="13I-u8-fFQ" secondAttribute="bottom" constant="10" id="KJv-J1-mQv"/>
+                                    <constraint firstAttribute="trailing" secondItem="6pp-6L-ddj" secondAttribute="trailing" constant="15" id="RL3-kb-Mt8"/>
+                                    <constraint firstItem="6pp-6L-ddj" firstAttribute="leading" secondItem="pkW-dg-g05" secondAttribute="leading" constant="15" id="SA9-1L-94h"/>
                                     <constraint firstAttribute="bottom" secondItem="6pp-6L-ddj" secondAttribute="bottom" constant="780" id="YvZ-Ii-DWa"/>
-                                    <constraint firstItem="13I-u8-fFQ" firstAttribute="leading" secondItem="6pp-6L-ddj" secondAttribute="leading" id="dyp-Aa-yOD"/>
-                                    <constraint firstItem="13I-u8-fFQ" firstAttribute="trailing" secondItem="6pp-6L-ddj" secondAttribute="trailing" id="mT0-Ed-M5P"/>
-                                    <constraint firstItem="13I-u8-fFQ" firstAttribute="top" secondItem="6pp-6L-ddj" secondAttribute="bottom" constant="20" id="v5P-Ei-Oby"/>
-                                    <constraint firstAttribute="trailing" secondItem="6pp-6L-ddj" secondAttribute="trailing" constant="8" id="ym1-RC-hkW"/>
+                                    <constraint firstAttribute="trailing" secondItem="6Za-77-YP6" secondAttribute="trailing" id="u0V-gX-fiZ"/>
+                                    <constraint firstItem="13I-u8-fFQ" firstAttribute="top" secondItem="6pp-6L-ddj" secondAttribute="bottom" constant="10" id="v5P-Ei-Oby"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="contentSize">
@@ -61,6 +74,9 @@
                         <viewLayoutGuide key="safeArea" id="veE-P7-EO7"/>
                     </view>
                     <size key="freeformSize" width="375" height="1000"/>
+                    <connections>
+                        <outlet property="hotSectionView" destination="6Za-77-YP6" id="B63-1P-r2D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mk5-dX-SQt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -68,6 +84,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="login_banner1_CH" width="750" height="400"/>
+        <image name="img_banner_one" width="346" height="181"/>
     </resources>
 </document>

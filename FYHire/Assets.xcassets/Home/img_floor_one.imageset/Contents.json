@@ -2,15 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "login_banner1_CH.png",
+      "filename" : "img_floor_one.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "img_floor_one@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
+      "filename" : "img_floor_one@3x.png",
       "scale" : "3x"
     }
   ],

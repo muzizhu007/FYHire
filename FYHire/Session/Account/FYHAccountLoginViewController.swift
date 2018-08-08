@@ -7,7 +7,7 @@
 //
 
 import UIKit
-//import IQKeyboardManagerSwift
+import IQKeyboardManagerSwift
 import Moya
 
 class FYHAccountLoginViewController: BaseViewController {
@@ -35,13 +35,13 @@ class FYHAccountLoginViewController: BaseViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-//        IQKeyboardManager.shared.enable = true
-//        IQKeyboardManager.shared.enableAutoToolbar = false
-//        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
+        IQKeyboardManager.shared.enable = true
+        IQKeyboardManager.shared.enableAutoToolbar = false
+        IQKeyboardManager.shared.shouldResignOnTouchOutside = true
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-//        IQKeyboardManager.shared.enable = false
+        IQKeyboardManager.shared.enable = false
     }
     
     class func viewController() -> FYHAccountLoginViewController {

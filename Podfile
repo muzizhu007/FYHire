@@ -7,8 +7,8 @@ target 'FYHire' do
 	pod 'Moya'
     pod 'RxSwift'
     pod 'Kingfisher'
-    #    pod 'FSPagerView'
+    #   pod 'FSPagerView'
     pod 'SVProgressHUD'
-    #   pod 'SwiftyUserDefaults'
-    #   pod 'IQKeyboardManagerSwift'
+	pod 'SwiftyUserDefaults'
+    pod 'IQKeyboardManagerSwift'
 end
