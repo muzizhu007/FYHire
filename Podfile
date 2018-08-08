@@ -1,4 +1,3 @@
-source 'https://github.com/CocoaPods/Specs.git'
 
 platform :ios, '9.0'
 use_frameworks!
@@ -11,4 +10,5 @@ target 'FYHire' do
     pod 'SVProgressHUD'
 	pod 'SwiftyUserDefaults'
     pod 'IQKeyboardManagerSwift'
+    #   pod 'SnapKit', '~> 4.0.0'
 end
