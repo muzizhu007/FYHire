@@ -37,11 +37,11 @@ class ViewController: UITabBarController {
     private func setTabBarItem(item : UITabBarItem, title : String, image : String, selected_image : String) {
         
         item.title = title
-        item.image = UIImage(named: image)?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
-        item.selectedImage = UIImage(named: selected_image)?.withRenderingMode(UIImage.RenderingMode.alwaysOriginal)
+        item.image = UIImage(named: image)?.withRenderingMode(.alwaysOriginal)
+        item.selectedImage = UIImage(named: selected_image)?.withRenderingMode(.alwaysOriginal)
         
-        item.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.gray], for: .normal)
-        item.setTitleTextAttributes([NSAttributedString.Key.foregroundColor : UIColor.orange], for: .selected)
+        item.setTitleTextAttributes([NSAttributedStringKey.foregroundColor : UIColor.gray], for: .normal)
+        item.setTitleTextAttributes([NSAttributedStringKey.foregroundColor : UIColor.orange], for: .selected)
     }
     
     
