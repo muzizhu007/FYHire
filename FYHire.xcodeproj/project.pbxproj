@@ -13,6 +13,10 @@
 		3B1CBA602119D28200CDC2C2 /* FYHHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1CBA5F2119D28200CDC2C2 /* FYHHomeViewController.swift */; };
 		3B1CBA622119D28D00CDC2C2 /* FYHMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1CBA612119D28D00CDC2C2 /* FYHMeViewController.swift */; };
 		3B1CBA642119D29900CDC2C2 /* FYHOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1CBA632119D29900CDC2C2 /* FYHOrderViewController.swift */; };
+		3B4CEB2D211C9E880007E233 /* CoolSlidingMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4CEB29211C9E880007E233 /* CoolSlidingMenuView.swift */; };
+		3B4CEB2E211C9E880007E233 /* CoolSlidingMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4CEB2A211C9E880007E233 /* CoolSlidingMenuManager.swift */; };
+		3B4CEB2F211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4CEB2B211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.swift */; };
+		3B4CEB30211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4CEB2C211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.xib */; };
 		844E5651211818210058EFCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5650211818210058EFCE /* AppDelegate.swift */; };
 		844E5653211818210058EFCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5652211818210058EFCE /* ViewController.swift */; };
 		844E5656211818210058EFCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844E5654211818210058EFCE /* Main.storyboard */; };
@@ -38,6 +42,10 @@
 		3B1CBA5F2119D28200CDC2C2 /* FYHHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHHomeViewController.swift; sourceTree = "<group>"; };
 		3B1CBA612119D28D00CDC2C2 /* FYHMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHMeViewController.swift; sourceTree = "<group>"; };
 		3B1CBA632119D29900CDC2C2 /* FYHOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHOrderViewController.swift; sourceTree = "<group>"; };
+		3B4CEB29211C9E880007E233 /* CoolSlidingMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolSlidingMenuView.swift; sourceTree = "<group>"; };
+		3B4CEB2A211C9E880007E233 /* CoolSlidingMenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolSlidingMenuManager.swift; sourceTree = "<group>"; };
+		3B4CEB2B211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolSlidingMenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		3B4CEB2C211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoolSlidingMenuCollectionViewCell.xib; sourceTree = "<group>"; };
 		7A506653BCB51DA7451CCD05 /* Pods-FYHire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYHire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FYHire/Pods-FYHire.debug.xcconfig"; sourceTree = "<group>"; };
 		844E564D211818210058EFCE /* FYHire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYHire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844E5650211818210058EFCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +103,17 @@
 				3B1CBA632119D29900CDC2C2 /* FYHOrderViewController.swift */,
 			);
 			path = Order;
+			sourceTree = "<group>";
+		};
+		3B4CEB28211C9E880007E233 /* CoolSlidingMenu */ = {
+			isa = PBXGroup;
+			children = (
+				3B4CEB29211C9E880007E233 /* CoolSlidingMenuView.swift */,
+				3B4CEB2A211C9E880007E233 /* CoolSlidingMenuManager.swift */,
+				3B4CEB2B211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.swift */,
+				3B4CEB2C211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.xib */,
+			);
+			path = CoolSlidingMenu;
 			sourceTree = "<group>";
 		};
 		844E5644211818210058EFCE = {
@@ -171,6 +190,7 @@
 		84D26F4E2119320D00F41EC5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3B4CEB28211C9E880007E233 /* CoolSlidingMenu */,
 				84D26F4F2119324900F41EC5 /* FYUnderLineTextField.swift */,
 				84D26F5B2119762500F41EC5 /* UIButton-FYHExtension.swift */,
 				84ACD395211C63CC0038B88B /* UIColor-FYHExtension.swift */,
@@ -273,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				844E565B211818230058EFCE /* LaunchScreen.storyboard in Resources */,
+				3B4CEB30211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.xib in Resources */,
 				3B1CBA582119D22E00CDC2C2 /* FYH-Home.storyboard in Resources */,
 				3B1CBA5E2119D26900CDC2C2 /* FYH-Order.storyboard in Resources */,
 				844E5658211818230058EFCE /* Assets.xcassets in Resources */,
@@ -348,12 +369,15 @@
 			files = (
 				84D26F582119352C00F41EC5 /* FYHAccountLoginViewController.swift in Sources */,
 				844E5653211818210058EFCE /* ViewController.swift in Sources */,
+				3B4CEB2F211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.swift in Sources */,
+				3B4CEB2E211C9E880007E233 /* CoolSlidingMenuManager.swift in Sources */,
 				84D26F54211934B700F41EC5 /* BaseViewController.swift in Sources */,
 				84D26F5C2119762500F41EC5 /* UIButton-FYHExtension.swift in Sources */,
 				3B1CBA622119D28D00CDC2C2 /* FYHMeViewController.swift in Sources */,
 				849349D9211AF9CC00BB1C0B /* FYHHomeProductView.swift in Sources */,
 				844E5651211818210058EFCE /* AppDelegate.swift in Sources */,
 				3B1CBA642119D29900CDC2C2 /* FYHOrderViewController.swift in Sources */,
+				3B4CEB2D211C9E880007E233 /* CoolSlidingMenuView.swift in Sources */,
 				84D26F502119324900F41EC5 /* FYUnderLineTextField.swift in Sources */,
 				849349DD211B0AC800BB1C0B /* FYHHomeSectionView.swift in Sources */,
 				3B1CBA602119D28200CDC2C2 /* FYHHomeViewController.swift in Sources */,

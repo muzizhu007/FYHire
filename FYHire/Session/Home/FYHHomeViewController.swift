@@ -18,7 +18,7 @@ class FYHHomeViewController: BaseViewController,FSPagerViewDataSource,FSPagerVie
     let pagerView = FSPagerView()
     let pagerControl = FSPageControl()
     
-//    let selectView = UIView()
+    let menuView = CoolSlidingMenuView()
     let hotSectionView = FYHHomeSectionView()
     
     fileprivate let imageNames = ["img_banner_one","img_banner_one","img_banner_one"]
@@ -28,6 +28,7 @@ class FYHHomeViewController: BaseViewController,FSPagerViewDataSource,FSPagerVie
         // Do any additional setup after loading the view.
         initSubViews()
         initPagerView()
+        initMenuView()
         initSectionView()
     }
     
@@ -61,21 +62,20 @@ class FYHHomeViewController: BaseViewController,FSPagerViewDataSource,FSPagerVie
             make.bottom.equalTo(contentView.snp.top).offset(180)
         }
         
-        //添加类型选择视图
-//        selectView.backgroundColor = .gray
-//        contentView.addSubview(selectView)
-//        selectView.snp.makeConstraints { (make) in
-//            make.top.equalTo(pagerView.snp.bottom).offset(10)
-//            make.right.left.equalTo(pagerView)
-//            make.height.equalTo(85)
-//        }
-        
         contentView.addSubview(hotSectionView)
         hotSectionView.snp.makeConstraints { (make) in
             make.top.equalTo(pagerView.snp.bottom).offset(113)
             make.right.left.equalTo(pagerView)
             make.bottom.equalToSuperview()
             make.height.equalTo(467)
+        }
+        
+        //添加类型选择视图
+        contentView.addSubview(menuView)
+        menuView.snp.makeConstraints { (make) in
+            make.top.equalTo(pagerView.snp.bottom)
+            make.bottom.equalTo(hotSectionView.snp.top)
+            make.right.left.equalToSuperview()
         }
     }
     
@@ -90,6 +90,31 @@ class FYHHomeViewController: BaseViewController,FSPagerViewDataSource,FSPagerVie
         
         pagerView.delegate = self
         pagerView.dataSource = self
+    }
+    
+    private func initMenuView() {
+        // 显示滑动菜单pageControl （Display slider menu）
+        menuView.pgCtrl.isHidden = false
+        // 未选中页pageControl颜色 (UnSelectedColor of pageControl)
+        menuView.pgCtrlNormalColor = .lightGray
+        // 选中页pageControl颜色 (SelectedColor of pageControl)
+        menuView.pgCtrlSelectedColor = .red
+        // 设置滑动菜单的行数 （Sets the number of rows in the sliding menu）
+        menuView.countRow = 1
+        // 设置滑动菜单的列数 （Sets the number of columns in the sliding menu）
+        menuView.countCol = 4
+        
+        let arrMenu = [
+            ["title":"台式机","image":"icon_computer_class"],
+            ["title":"手机","image":"icon_telephone_class"],
+            ["title":"游戏机","image":"icon_game_class"],
+            ["title":"数码潮品","image":"icon_digital_class"],
+            ["title":"台式机","image":"icon_computer_class"],
+            ["title":"手机","image":"icon_telephone_class"],
+            ["title":"游戏机","image":"icon_game_class"],
+            ["title":"数码潮品","image":"icon_digital_class"]
+        ]
+        menuView.arrMenu = arrMenu
     }
     
     private func initSectionView() {
