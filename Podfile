@@ -7,6 +7,7 @@ target 'FYHire' do
     pod 'RxSwift'
     pod 'Kingfisher'
     pod 'FSPagerView'
+    pod 'DNSPageView'
     pod 'SVProgressHUD'
 	pod 'SwiftyUserDefaults'
     pod 'IQKeyboardManagerSwift'
