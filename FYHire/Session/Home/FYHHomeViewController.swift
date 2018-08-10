@@ -10,7 +10,7 @@ import UIKit
 import SnapKit
 import FSPagerView
 
-class FYHHomeViewController: BaseViewController,FSPagerViewDataSource,FSPagerViewDelegate {
+class FYHHomeViewController: UIViewController,FSPagerViewDataSource,FSPagerViewDelegate {
     
     let scrollView = UIScrollView()
     let contentView = UIView()
@@ -123,6 +123,7 @@ class FYHHomeViewController: BaseViewController,FSPagerViewDataSource,FSPagerVie
         hotSectionView.sectionLabel.text = "热门商品"
         
         hotSectionView.moreButton.setTitle("更多", for: .normal)
+        hotSectionView.moreButton.addTarget(self, action: #selector(buttonClick(_:)), for: .touchUpInside)
         
         hotSectionView.sectionImage.image = UIImage.init(named: "icon_hot_pro")
         hotSectionView.bigImage.image = UIImage.init(named: "img_floor_one")
@@ -134,6 +135,11 @@ class FYHHomeViewController: BaseViewController,FSPagerViewDataSource,FSPagerVie
         hotSectionView.product2View.productImage.image = UIImage.init(named: "img_iphone_pro")
         hotSectionView.product2View.productName.text = "iPhone X 全新国行 全面屏手机"
         hotSectionView.product2View.productPrice.text = "¥ 399/月起"
+    }
+    
+    @objc func buttonClick(_ sender: UIButton) {
+        let productVC = FYHProductViewController.viewController()
+        self.navigationController?.show(productVC, sender: nil)
     }
     
     // MARK:- FSPagerView DataSource

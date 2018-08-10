@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FYHMeViewController: BaseViewController {
+class FYHMeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

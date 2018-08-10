@@ -17,6 +17,7 @@
 		3B4CEB2E211C9E880007E233 /* CoolSlidingMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4CEB2A211C9E880007E233 /* CoolSlidingMenuManager.swift */; };
 		3B4CEB2F211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4CEB2B211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.swift */; };
 		3B4CEB30211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4CEB2C211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.xib */; };
+		3BF7646E211DEE74008F8AF4 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7646D211DEE74008F8AF4 /* ContentViewController.swift */; };
 		844E5651211818210058EFCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5650211818210058EFCE /* AppDelegate.swift */; };
 		844E5653211818210058EFCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5652211818210058EFCE /* ViewController.swift */; };
 		844E5656211818210058EFCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844E5654211818210058EFCE /* Main.storyboard */; };
@@ -26,7 +27,6 @@
 		849349DD211B0AC800BB1C0B /* FYHHomeSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849349DC211B0AC800BB1C0B /* FYHHomeSectionView.swift */; };
 		84ACD396211C63CC0038B88B /* UIColor-FYHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACD395211C63CC0038B88B /* UIColor-FYHExtension.swift */; };
 		84B5909B211D9579001F3D7D /* FYHProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B5909A211D9579001F3D7D /* FYHProductViewController.swift */; };
-		84B5909F211D95EC001F3D7D /* FYH-Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B5909E211D95EC001F3D7D /* FYH-Product.storyboard */; };
 		84D26F502119324900F41EC5 /* FYUnderLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D26F4F2119324900F41EC5 /* FYUnderLineTextField.swift */; };
 		84D26F54211934B700F41EC5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D26F53211934B700F41EC5 /* BaseViewController.swift */; };
 		84D26F56211934F100F41EC5 /* FYH-Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D26F55211934F100F41EC5 /* FYH-Account.storyboard */; };
@@ -48,6 +48,7 @@
 		3B4CEB2A211C9E880007E233 /* CoolSlidingMenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolSlidingMenuManager.swift; sourceTree = "<group>"; };
 		3B4CEB2B211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolSlidingMenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B4CEB2C211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoolSlidingMenuCollectionViewCell.xib; sourceTree = "<group>"; };
+		3BF7646D211DEE74008F8AF4 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		7A506653BCB51DA7451CCD05 /* Pods-FYHire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYHire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FYHire/Pods-FYHire.debug.xcconfig"; sourceTree = "<group>"; };
 		844E564D211818210058EFCE /* FYHire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYHire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844E5650211818210058EFCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +61,6 @@
 		849349DC211B0AC800BB1C0B /* FYHHomeSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHHomeSectionView.swift; sourceTree = "<group>"; };
 		84ACD395211C63CC0038B88B /* UIColor-FYHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-FYHExtension.swift"; sourceTree = "<group>"; };
 		84B5909A211D9579001F3D7D /* FYHProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHProductViewController.swift; sourceTree = "<group>"; };
-		84B5909E211D95EC001F3D7D /* FYH-Product.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "FYH-Product.storyboard"; sourceTree = "<group>"; };
 		84D26F4F2119324900F41EC5 /* FYUnderLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYUnderLineTextField.swift; sourceTree = "<group>"; };
 		84D26F53211934B700F41EC5 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		84D26F55211934F100F41EC5 /* FYH-Account.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "FYH-Account.storyboard"; sourceTree = "<group>"; };
@@ -162,8 +162,8 @@
 		84B59097211D951F001F3D7D /* Product */ = {
 			isa = PBXGroup;
 			children = (
+				3BF7646D211DEE74008F8AF4 /* ContentViewController.swift */,
 				84B5909A211D9579001F3D7D /* FYHProductViewController.swift */,
-				84B5909E211D95EC001F3D7D /* FYH-Product.storyboard */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -308,7 +308,6 @@
 			files = (
 				844E565B211818230058EFCE /* LaunchScreen.storyboard in Resources */,
 				3B4CEB30211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.xib in Resources */,
-				84B5909F211D95EC001F3D7D /* FYH-Product.storyboard in Resources */,
 				3B1CBA582119D22E00CDC2C2 /* FYH-Home.storyboard in Resources */,
 				3B1CBA5E2119D26900CDC2C2 /* FYH-Order.storyboard in Resources */,
 				844E5658211818230058EFCE /* Assets.xcassets in Resources */,
@@ -386,6 +385,7 @@
 			files = (
 				84B5909B211D9579001F3D7D /* FYHProductViewController.swift in Sources */,
 				84D26F582119352C00F41EC5 /* FYHAccountLoginViewController.swift in Sources */,
+				3BF7646E211DEE74008F8AF4 /* ContentViewController.swift in Sources */,
 				844E5653211818210058EFCE /* ViewController.swift in Sources */,
 				3B4CEB2F211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.swift in Sources */,
 				3B4CEB2E211C9E880007E233 /* CoolSlidingMenuManager.swift in Sources */,

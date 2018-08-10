@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FYHOrderViewController: BaseViewController {
+class FYHOrderViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
