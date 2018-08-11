@@ -10,6 +10,7 @@ import UIKit
 
 class FTHProductTableViewCell: UITableViewCell {
     
+    lazy var backview = UIView()
     lazy var productImage = UIImageView()
     lazy var nameLabel = UILabel()
     lazy var priceLabel = UILabel()
@@ -27,17 +28,16 @@ class FTHProductTableViewCell: UITableViewCell {
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        contentView.addSubview(productImage)
-        contentView.addSubview(nameLabel)
-        contentView.addSubview(priceLabel)
-        contentView.addSubview(mianYaLabel)
-        contentView.addSubview(mianPeiLabel)
+        contentView.addSubview(backview)
+        
+        backview.addSubview(productImage)
+        backview.addSubview(nameLabel)
+        backview.addSubview(priceLabel)
+        backview.addSubview(mianYaLabel)
+        backview.addSubview(mianPeiLabel)
 
         setUpUI()
     }
-    
-
-
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -51,6 +51,14 @@ class FTHProductTableViewCell: UITableViewCell {
     }
 
     private func setUpUI() {
+        backview.backgroundColor = .white
+        backview.layer.shadowColor = UIColor.gray.cgColor
+        backview.layer.shadowOpacity = 0.8;
+        backview.layer.shadowOffset = CGSize.init(width: 0, height: 0);
+        
+        backview.snp.makeConstraints { (make) in
+            make.edges.equalToSuperview().inset(UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5))
+        }
         
         productImage.snp.makeConstraints { (make) in
             make.left.equalToSuperview().offset(12)

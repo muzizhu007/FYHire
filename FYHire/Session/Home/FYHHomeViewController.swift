@@ -146,6 +146,10 @@ class FYHHomeViewController: UIViewController,FSPagerViewDataSource,FSPagerViewD
         hotSectionView.product2View.productImage.image = UIImage.init(named: "img_iphone_pro")
         hotSectionView.product2View.productName.text = "iPhone X 全新国行 全面屏手机"
         hotSectionView.product2View.productPrice.text = "¥ 399/月起"
+        
+        let productRecognizer = UITapGestureRecognizer(target: self, action: #selector(viewPuls(_:)));
+        hotSectionView.product1View.addGestureRecognizer(productRecognizer)
+        hotSectionView.product2View.addGestureRecognizer(productRecognizer)
     }
     
     @objc func buttonClick(_ sender: UIButton) {
@@ -159,6 +163,11 @@ class FYHHomeViewController: UIViewController,FSPagerViewDataSource,FSPagerViewD
             break
         }
         
+    }
+    
+    @objc func viewPuls(_ sender: UITapGestureRecognizer) {
+        let vc = FYHProductViewController.viewController()
+        self.navigationController?.show(vc, sender: nil)
     }
     
     // MARK:- FSPagerView DataSource

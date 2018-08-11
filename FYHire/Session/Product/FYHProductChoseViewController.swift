@@ -21,6 +21,9 @@ class FYHProductChoseViewController: BaseViewController {
     
     lazy var buyButton = UIButton()
     
+    let scrollView = UIScrollView()
+    let scrollContentView = UIView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -110,6 +113,73 @@ class FYHProductChoseViewController: BaseViewController {
             make.left.equalToSuperview().offset(15)
             make.bottom.right.equalToSuperview().offset(-15)
             make.height.equalTo(40)
+        }
+        
+        //
+        contentView.addSubview(scrollView)
+        scrollView.snp.makeConstraints { (make) in
+            make.top.equalTo(productValue.snp.bottom).offset(5)
+            make.left.right.equalToSuperview()
+            make.bottom.equalTo(buyButton.snp.top).offset(-5)
+        }
+        
+        //添加容器视图
+        scrollContentView.backgroundColor = .white
+        scrollView.addSubview(scrollContentView)
+        scrollContentView.snp.makeConstraints { (make) in
+            make.top.bottom.equalTo(scrollView)
+            make.left.right.equalTo(contentView)
+        }
+        
+        let netLabel = UILabel()
+        netLabel.text = "网络"
+        netLabel.textColor = UIColor.init(hex: "333333")
+        netLabel.font = UIFont.boldSystemFont(ofSize: 13)
+        scrollContentView.addSubview(netLabel)
+        netLabel.snp.makeConstraints { (make) in
+            make.top.equalToSuperview().offset(20)
+            make.left.equalToSuperview().offset(20)
+        }
+        
+        let colorLabel = UILabel()
+        colorLabel.text = "颜色"
+        colorLabel.textColor = UIColor.init(hex: "333333")
+        colorLabel.font = UIFont.boldSystemFont(ofSize: 13)
+        scrollContentView.addSubview(colorLabel)
+        colorLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(netLabel.snp.bottom).offset(30)
+            make.left.equalToSuperview().offset(20)
+        }
+        
+        let cacheLabel = UILabel()
+        cacheLabel.text = "内存"
+        cacheLabel.textColor = UIColor.init(hex: "333333")
+        cacheLabel.font = UIFont.boldSystemFont(ofSize: 13)
+        scrollContentView.addSubview(cacheLabel)
+        cacheLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(colorLabel.snp.bottom).offset(30)
+            make.left.equalToSuperview().offset(20)
+        }
+        
+        let hireTimeLabel = UILabel()
+        hireTimeLabel.text = "租期"
+        hireTimeLabel.textColor = UIColor.init(hex: "333333")
+        hireTimeLabel.font = UIFont.boldSystemFont(ofSize: 13)
+        scrollContentView.addSubview(hireTimeLabel)
+        hireTimeLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(cacheLabel.snp.bottom).offset(30)
+            make.left.equalToSuperview().offset(20)
+        }
+        
+        let protectionLabel = UILabel()
+        protectionLabel.text = "意外保障"
+        protectionLabel.textColor = UIColor.init(hex: "333333")
+        protectionLabel.font = UIFont.boldSystemFont(ofSize: 13)
+        scrollContentView.addSubview(protectionLabel)
+        protectionLabel.snp.makeConstraints { (make) in
+            make.top.equalTo(hireTimeLabel.snp.bottom).offset(40)
+            make.left.equalToSuperview().offset(20)
+            make.bottom.equalToSuperview().offset(-20)
         }
         
     }

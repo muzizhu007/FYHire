@@ -35,6 +35,9 @@ class FYHProductListController: BaseViewController, UITableViewDataSource,UITabl
         productTableView.delegate = self
         productTableView.dataSource = self
         
+        // 去除多余的分割线
+        productTableView.separatorStyle = .none
+        
         productTableView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview().inset(UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 15))
         }
@@ -45,7 +48,6 @@ class FYHProductListController: BaseViewController, UITableViewDataSource,UITabl
         return 10
     }
     
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let indentifier = "ProductCell"
@@ -54,6 +56,7 @@ class FYHProductListController: BaseViewController, UITableViewDataSource,UITabl
         if cell == nil {
             cell = FTHProductTableViewCell(style: .default, reuseIdentifier: indentifier)
         }
+        cell.selectionStyle = .none
         
         cell.productImage.image = UIImage.init(named: "img_exp_iphone")
         cell.nameLabel.text = "iPhone8 Plus 全新国行 美在智慧"
