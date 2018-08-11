@@ -17,11 +17,27 @@
                     <navigationItem key="navigationItem" id="Wu0-Qv-hXB"/>
                     <connections>
                         <segue destination="tgD-nC-Rq6" kind="show" id="vE7-3b-ENg"/>
+                        <segue destination="Afo-4s-3JA" kind="show" id="1bk-1X-ZS5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mk5-dX-SQt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="124" y="265"/>
+        </scene>
+        <!--Product List Controller-->
+        <scene sceneID="NNC-6q-WPd">
+            <objects>
+                <viewController storyboardIdentifier="FYHProductListController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Afo-4s-3JA" customClass="FYHProductListController" customModule="FYHire" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vs6-qo-wD6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="u5R-oQ-2GK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2J4-tt-LMU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1273" y="567"/>
         </scene>
         <!--Product View Controller-->
         <scene sceneID="zsP-fu-uyW">

@@ -132,6 +132,7 @@ class FYHHomeViewController: UIViewController,FSPagerViewDataSource,FSPagerViewD
         hotSectionView.subTitleLabel.text = "只有想不到·没有租不到"
         hotSectionView.sectionLabel.text = "热门商品"
         
+        hotSectionView.moreButton.tag = 101;
         hotSectionView.moreButton.setTitle("更多", for: .normal)
         hotSectionView.moreButton.addTarget(self, action: #selector(buttonClick(_:)), for: .touchUpInside)
         
@@ -148,8 +149,16 @@ class FYHHomeViewController: UIViewController,FSPagerViewDataSource,FSPagerViewD
     }
     
     @objc func buttonClick(_ sender: UIButton) {
-        let productVC = FYHProductViewController.viewController()
-        self.navigationController?.show(productVC, sender: nil)
+        
+        switch sender.tag {
+        case 101:
+            let vc = FYHProductListController.viewController()
+            self.navigationController?.show(vc, sender: nil)
+            break
+        default:
+            break
+        }
+        
     }
     
     // MARK:- FSPagerView DataSource

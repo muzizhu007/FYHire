@@ -13,6 +13,8 @@
 		3B1CBA602119D28200CDC2C2 /* FYHHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1CBA5F2119D28200CDC2C2 /* FYHHomeViewController.swift */; };
 		3B1CBA622119D28D00CDC2C2 /* FYHMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1CBA612119D28D00CDC2C2 /* FYHMeViewController.swift */; };
 		3B1CBA642119D29900CDC2C2 /* FYHOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1CBA632119D29900CDC2C2 /* FYHOrderViewController.swift */; };
+		3B39CFC1211EEFA1001FB8C0 /* FTHProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B39CFC0211EEFA1001FB8C0 /* FTHProductTableViewCell.swift */; };
+		3B39CFC3211EF2F6001FB8C0 /* FYHProductListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B39CFC2211EF2F6001FB8C0 /* FYHProductListController.swift */; };
 		3B4CEB2D211C9E880007E233 /* CoolSlidingMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4CEB29211C9E880007E233 /* CoolSlidingMenuView.swift */; };
 		3B4CEB2E211C9E880007E233 /* CoolSlidingMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4CEB2A211C9E880007E233 /* CoolSlidingMenuManager.swift */; };
 		3B4CEB2F211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4CEB2B211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.swift */; };
@@ -49,6 +51,8 @@
 		3B1CBA5F2119D28200CDC2C2 /* FYHHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHHomeViewController.swift; sourceTree = "<group>"; };
 		3B1CBA612119D28D00CDC2C2 /* FYHMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHMeViewController.swift; sourceTree = "<group>"; };
 		3B1CBA632119D29900CDC2C2 /* FYHOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHOrderViewController.swift; sourceTree = "<group>"; };
+		3B39CFC0211EEFA1001FB8C0 /* FTHProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTHProductTableViewCell.swift; sourceTree = "<group>"; };
+		3B39CFC2211EF2F6001FB8C0 /* FYHProductListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHProductListController.swift; sourceTree = "<group>"; };
 		3B4CEB29211C9E880007E233 /* CoolSlidingMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolSlidingMenuView.swift; sourceTree = "<group>"; };
 		3B4CEB2A211C9E880007E233 /* CoolSlidingMenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolSlidingMenuManager.swift; sourceTree = "<group>"; };
 		3B4CEB2B211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolSlidingMenuCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -135,6 +139,7 @@
 			children = (
 				3B7C951A211E68E100A69381 /* FTHProductIntroduceView.swift */,
 				3B7C9522211ED02F00A69381 /* FTHProductCommentCell.swift */,
+				3B39CFC0211EEFA1001FB8C0 /* FTHProductTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				84B5909A211D9579001F3D7D /* FYHProductViewController.swift */,
 				3B7C951C211EAACF00A69381 /* FYHProductChoseViewController.swift */,
 				3B7C9520211ECF6F00A69381 /* FTHProductCommentController.swift */,
+				3B39CFC2211EF2F6001FB8C0 /* FYHProductListController.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -415,6 +421,7 @@
 				3B4CEB2E211C9E880007E233 /* CoolSlidingMenuManager.swift in Sources */,
 				3B7C9521211ECF6F00A69381 /* FTHProductCommentController.swift in Sources */,
 				3B7C9523211ED02F00A69381 /* FTHProductCommentCell.swift in Sources */,
+				3B39CFC3211EF2F6001FB8C0 /* FYHProductListController.swift in Sources */,
 				3B7C951B211E68E100A69381 /* FTHProductIntroduceView.swift in Sources */,
 				84D26F54211934B700F41EC5 /* BaseViewController.swift in Sources */,
 				84D26F5C2119762500F41EC5 /* UIButton-FYHExtension.swift in Sources */,
@@ -426,6 +433,7 @@
 				84D26F502119324900F41EC5 /* FYUnderLineTextField.swift in Sources */,
 				849349DD211B0AC800BB1C0B /* FYHHomeSectionView.swift in Sources */,
 				3B1CBA602119D28200CDC2C2 /* FYHHomeViewController.swift in Sources */,
+				3B39CFC1211EEFA1001FB8C0 /* FTHProductTableViewCell.swift in Sources */,
 				3B7C951F211EB20D00A69381 /* UIView-FYHExtension.swift in Sources */,
 				84ACD396211C63CC0038B88B /* UIColor-FYHExtension.swift in Sources */,
 			);
