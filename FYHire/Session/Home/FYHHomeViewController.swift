@@ -61,6 +61,11 @@ class FYHHomeViewController: UIViewController,FSPagerViewDataSource,FSPagerViewD
             make.right.equalTo(contentView).offset(-15)
             make.bottom.equalTo(contentView.snp.top).offset(180)
         }
+        contentView.addSubview(pagerControl)
+        pagerControl.snp.makeConstraints { (make) in
+            make.top.equalTo(pagerView.snp.bottom).offset(-10)
+            make.right.equalTo(pagerView).offset(-15)
+        }
         
         contentView.addSubview(hotSectionView)
         hotSectionView.snp.makeConstraints { (make) in
@@ -86,7 +91,12 @@ class FYHHomeViewController: UIViewController,FSPagerViewDataSource,FSPagerViewD
         pagerView.transformer = FSPagerViewTransformer(type: .overlap)
         
         pagerControl.numberOfPages = imageNames.count
-        pagerControl.contentInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        pagerControl.contentHorizontalAlignment = .right
+//        pagerControl.contentInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        
+        //设置下标指示器颜色（选中状态和普通状态）
+        pagerControl.setFillColor(.white, for: .normal)
+        pagerControl.setFillColor(.black, for: .selected)
         
         pagerView.delegate = self
         pagerView.dataSource = self

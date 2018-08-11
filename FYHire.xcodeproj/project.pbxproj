@@ -17,7 +17,12 @@
 		3B4CEB2E211C9E880007E233 /* CoolSlidingMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4CEB2A211C9E880007E233 /* CoolSlidingMenuManager.swift */; };
 		3B4CEB2F211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4CEB2B211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.swift */; };
 		3B4CEB30211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B4CEB2C211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.xib */; };
-		3BF7646E211DEE74008F8AF4 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7646D211DEE74008F8AF4 /* ContentViewController.swift */; };
+		3B7C951B211E68E100A69381 /* FTHProductIntroduceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C951A211E68E100A69381 /* FTHProductIntroduceView.swift */; };
+		3B7C951D211EAACF00A69381 /* FYHProductChoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C951C211EAACF00A69381 /* FYHProductChoseViewController.swift */; };
+		3B7C951F211EB20D00A69381 /* UIView-FYHExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C951E211EB20D00A69381 /* UIView-FYHExtension.swift */; };
+		3B7C9521211ECF6F00A69381 /* FTHProductCommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C9520211ECF6F00A69381 /* FTHProductCommentController.swift */; };
+		3B7C9523211ED02F00A69381 /* FTHProductCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7C9522211ED02F00A69381 /* FTHProductCommentCell.swift */; };
+		3BF7646E211DEE74008F8AF4 /* FTHProductContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7646D211DEE74008F8AF4 /* FTHProductContentViewController.swift */; };
 		844E5651211818210058EFCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5650211818210058EFCE /* AppDelegate.swift */; };
 		844E5653211818210058EFCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5652211818210058EFCE /* ViewController.swift */; };
 		844E5656211818210058EFCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844E5654211818210058EFCE /* Main.storyboard */; };
@@ -48,7 +53,12 @@
 		3B4CEB2A211C9E880007E233 /* CoolSlidingMenuManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolSlidingMenuManager.swift; sourceTree = "<group>"; };
 		3B4CEB2B211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoolSlidingMenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		3B4CEB2C211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoolSlidingMenuCollectionViewCell.xib; sourceTree = "<group>"; };
-		3BF7646D211DEE74008F8AF4 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		3B7C951A211E68E100A69381 /* FTHProductIntroduceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTHProductIntroduceView.swift; sourceTree = "<group>"; };
+		3B7C951C211EAACF00A69381 /* FYHProductChoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHProductChoseViewController.swift; sourceTree = "<group>"; };
+		3B7C951E211EB20D00A69381 /* UIView-FYHExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView-FYHExtension.swift"; sourceTree = "<group>"; };
+		3B7C9520211ECF6F00A69381 /* FTHProductCommentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTHProductCommentController.swift; sourceTree = "<group>"; };
+		3B7C9522211ED02F00A69381 /* FTHProductCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTHProductCommentCell.swift; sourceTree = "<group>"; };
+		3BF7646D211DEE74008F8AF4 /* FTHProductContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTHProductContentViewController.swift; sourceTree = "<group>"; };
 		7A506653BCB51DA7451CCD05 /* Pods-FYHire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYHire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FYHire/Pods-FYHire.debug.xcconfig"; sourceTree = "<group>"; };
 		844E564D211818210058EFCE /* FYHire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYHire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844E5650211818210058EFCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +130,15 @@
 			path = CoolSlidingMenu;
 			sourceTree = "<group>";
 		};
+		3B7C9519211E67DD00A69381 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3B7C951A211E68E100A69381 /* FTHProductIntroduceView.swift */,
+				3B7C9522211ED02F00A69381 /* FTHProductCommentCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		844E5644211818210058EFCE = {
 			isa = PBXGroup;
 			children = (
@@ -162,8 +181,11 @@
 		84B59097211D951F001F3D7D /* Product */ = {
 			isa = PBXGroup;
 			children = (
-				3BF7646D211DEE74008F8AF4 /* ContentViewController.swift */,
+				3B7C9519211E67DD00A69381 /* View */,
+				3BF7646D211DEE74008F8AF4 /* FTHProductContentViewController.swift */,
 				84B5909A211D9579001F3D7D /* FYHProductViewController.swift */,
+				3B7C951C211EAACF00A69381 /* FYHProductChoseViewController.swift */,
+				3B7C9520211ECF6F00A69381 /* FTHProductCommentController.swift */,
 			);
 			path = Product;
 			sourceTree = "<group>";
@@ -208,6 +230,7 @@
 				84D26F4F2119324900F41EC5 /* FYUnderLineTextField.swift */,
 				84D26F5B2119762500F41EC5 /* UIButton-FYHExtension.swift */,
 				84ACD395211C63CC0038B88B /* UIColor-FYHExtension.swift */,
+				3B7C951E211EB20D00A69381 /* UIView-FYHExtension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -385,10 +408,14 @@
 			files = (
 				84B5909B211D9579001F3D7D /* FYHProductViewController.swift in Sources */,
 				84D26F582119352C00F41EC5 /* FYHAccountLoginViewController.swift in Sources */,
-				3BF7646E211DEE74008F8AF4 /* ContentViewController.swift in Sources */,
+				3BF7646E211DEE74008F8AF4 /* FTHProductContentViewController.swift in Sources */,
+				3B7C951D211EAACF00A69381 /* FYHProductChoseViewController.swift in Sources */,
 				844E5653211818210058EFCE /* ViewController.swift in Sources */,
 				3B4CEB2F211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.swift in Sources */,
 				3B4CEB2E211C9E880007E233 /* CoolSlidingMenuManager.swift in Sources */,
+				3B7C9521211ECF6F00A69381 /* FTHProductCommentController.swift in Sources */,
+				3B7C9523211ED02F00A69381 /* FTHProductCommentCell.swift in Sources */,
+				3B7C951B211E68E100A69381 /* FTHProductIntroduceView.swift in Sources */,
 				84D26F54211934B700F41EC5 /* BaseViewController.swift in Sources */,
 				84D26F5C2119762500F41EC5 /* UIButton-FYHExtension.swift in Sources */,
 				3B1CBA622119D28D00CDC2C2 /* FYHMeViewController.swift in Sources */,
@@ -399,6 +426,7 @@
 				84D26F502119324900F41EC5 /* FYUnderLineTextField.swift in Sources */,
 				849349DD211B0AC800BB1C0B /* FYHHomeSectionView.swift in Sources */,
 				3B1CBA602119D28200CDC2C2 /* FYHHomeViewController.swift in Sources */,
+				3B7C951F211EB20D00A69381 /* UIView-FYHExtension.swift in Sources */,
 				84ACD396211C63CC0038B88B /* UIColor-FYHExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
