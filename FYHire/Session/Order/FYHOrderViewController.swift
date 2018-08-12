@@ -61,6 +61,7 @@ class FYHOrderViewController: UIViewController {
         // 创建每一页对应的controller
         let childViewControllers: [FYHOrderTableViewController] = titles.map { _ -> FYHOrderTableViewController in
             let controller = FYHOrderTableViewController()
+            controller.parentNavigationController = self.navigationController
             return controller
         }
         

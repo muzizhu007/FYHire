@@ -10,6 +10,8 @@ import UIKit
 
 class FYHOrderTableViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
 
+    var parentNavigationController: UINavigationController?
+    
     lazy var orderTableView = UITableView()
     
     override func viewDidLoad() {
@@ -51,6 +53,13 @@ class FYHOrderTableViewController: BaseViewController, UITableViewDataSource, UI
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        self.resignFirstResponder()
+        let vc = FYHOrderDetailController.viewController()
+        parentNavigationController?.show(vc, sender: nil)
+        
     }
     
 }

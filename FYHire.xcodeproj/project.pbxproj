@@ -27,6 +27,9 @@
 		3BA3494F211FE81A008E2FE8 /* FYHOrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA3494E211FE81A008E2FE8 /* FYHOrderTableViewController.swift */; };
 		3BA34952211FE944008E2FE8 /* FYHOrderTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA34951211FE944008E2FE8 /* FYHOrderTableCell.swift */; };
 		3BA34954211FEA3F008E2FE8 /* FYHOrderTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA34953211FEA3F008E2FE8 /* FYHOrderTableCell.xib */; };
+		3BA34956212036D2008E2FE8 /* FYHOrderDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA34955212036D2008E2FE8 /* FYHOrderDetailController.swift */; };
+		3BA3495A2120494C008E2FE8 /* FYHOrderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA349592120494C008E2FE8 /* FYHOrderDetailView.swift */; };
+		3BA3495C21204958008E2FE8 /* FYHOrderDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA3495B21204958008E2FE8 /* FYHOrderDetailView.xib */; };
 		3BF7646E211DEE74008F8AF4 /* FTHProductContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7646D211DEE74008F8AF4 /* FTHProductContentViewController.swift */; };
 		844E5651211818210058EFCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5650211818210058EFCE /* AppDelegate.swift */; };
 		844E5653211818210058EFCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5652211818210058EFCE /* ViewController.swift */; };
@@ -68,6 +71,9 @@
 		3BA3494E211FE81A008E2FE8 /* FYHOrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHOrderTableViewController.swift; sourceTree = "<group>"; };
 		3BA34951211FE944008E2FE8 /* FYHOrderTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHOrderTableCell.swift; sourceTree = "<group>"; };
 		3BA34953211FEA3F008E2FE8 /* FYHOrderTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FYHOrderTableCell.xib; sourceTree = "<group>"; };
+		3BA34955212036D2008E2FE8 /* FYHOrderDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHOrderDetailController.swift; sourceTree = "<group>"; };
+		3BA349592120494C008E2FE8 /* FYHOrderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHOrderDetailView.swift; sourceTree = "<group>"; };
+		3BA3495B21204958008E2FE8 /* FYHOrderDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FYHOrderDetailView.xib; sourceTree = "<group>"; };
 		3BF7646D211DEE74008F8AF4 /* FTHProductContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTHProductContentViewController.swift; sourceTree = "<group>"; };
 		7A506653BCB51DA7451CCD05 /* Pods-FYHire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYHire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FYHire/Pods-FYHire.debug.xcconfig"; sourceTree = "<group>"; };
 		844E564D211818210058EFCE /* FYHire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYHire.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +133,7 @@
 				3B1CBA5D2119D26900CDC2C2 /* FYH-Order.storyboard */,
 				3B1CBA632119D29900CDC2C2 /* FYHOrderViewController.swift */,
 				3BA3494E211FE81A008E2FE8 /* FYHOrderTableViewController.swift */,
+				3BA34955212036D2008E2FE8 /* FYHOrderDetailController.swift */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -155,10 +162,28 @@
 		3BA34950211FE8AB008E2FE8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3BA3495821204931008E2FE8 /* FYHOrderDetailView */,
+				3BA34957212036E6008E2FE8 /* FYHOrderTableCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3BA34957212036E6008E2FE8 /* FYHOrderTableCell */ = {
+			isa = PBXGroup;
+			children = (
 				3BA34951211FE944008E2FE8 /* FYHOrderTableCell.swift */,
 				3BA34953211FEA3F008E2FE8 /* FYHOrderTableCell.xib */,
 			);
-			path = View;
+			path = FYHOrderTableCell;
+			sourceTree = "<group>";
+		};
+		3BA3495821204931008E2FE8 /* FYHOrderDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				3BA349592120494C008E2FE8 /* FYHOrderDetailView.swift */,
+				3BA3495B21204958008E2FE8 /* FYHOrderDetailView.xib */,
+			);
+			path = FYHOrderDetailView;
 			sourceTree = "<group>";
 		};
 		844E5644211818210058EFCE = {
@@ -356,6 +381,7 @@
 				3B4CEB30211C9E880007E233 /* CoolSlidingMenuCollectionViewCell.xib in Resources */,
 				3B1CBA582119D22E00CDC2C2 /* FYH-Home.storyboard in Resources */,
 				3B1CBA5E2119D26900CDC2C2 /* FYH-Order.storyboard in Resources */,
+				3BA3495C21204958008E2FE8 /* FYHOrderDetailView.xib in Resources */,
 				844E5658211818230058EFCE /* Assets.xcassets in Resources */,
 				84D26F56211934F100F41EC5 /* FYH-Account.storyboard in Resources */,
 				3BA34954211FEA3F008E2FE8 /* FYHOrderTableCell.xib in Resources */,
@@ -430,6 +456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BA3495A2120494C008E2FE8 /* FYHOrderDetailView.swift in Sources */,
 				84B5909B211D9579001F3D7D /* FYHProductViewController.swift in Sources */,
 				84D26F582119352C00F41EC5 /* FYHAccountLoginViewController.swift in Sources */,
 				3BF7646E211DEE74008F8AF4 /* FTHProductContentViewController.swift in Sources */,
@@ -443,6 +470,7 @@
 				3B7C951B211E68E100A69381 /* FTHProductIntroduceView.swift in Sources */,
 				84D26F54211934B700F41EC5 /* BaseViewController.swift in Sources */,
 				84D26F5C2119762500F41EC5 /* UIButton-FYHExtension.swift in Sources */,
+				3BA34956212036D2008E2FE8 /* FYHOrderDetailController.swift in Sources */,
 				3BA3494F211FE81A008E2FE8 /* FYHOrderTableViewController.swift in Sources */,
 				3B1CBA622119D28D00CDC2C2 /* FYHMeViewController.swift in Sources */,
 				849349D9211AF9CC00BB1C0B /* FYHHomeProductView.swift in Sources */,
