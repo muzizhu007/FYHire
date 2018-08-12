@@ -30,6 +30,7 @@
 		3BA34956212036D2008E2FE8 /* FYHOrderDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA34955212036D2008E2FE8 /* FYHOrderDetailController.swift */; };
 		3BA3495A2120494C008E2FE8 /* FYHOrderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA349592120494C008E2FE8 /* FYHOrderDetailView.swift */; };
 		3BA3495C21204958008E2FE8 /* FYHOrderDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA3495B21204958008E2FE8 /* FYHOrderDetailView.xib */; };
+		3BCA7F4F212075790076FFC0 /* FYHOrderClickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA7F4E212075790076FFC0 /* FYHOrderClickView.swift */; };
 		3BF7646E211DEE74008F8AF4 /* FTHProductContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7646D211DEE74008F8AF4 /* FTHProductContentViewController.swift */; };
 		844E5651211818210058EFCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5650211818210058EFCE /* AppDelegate.swift */; };
 		844E5653211818210058EFCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5652211818210058EFCE /* ViewController.swift */; };
@@ -74,6 +75,7 @@
 		3BA34955212036D2008E2FE8 /* FYHOrderDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHOrderDetailController.swift; sourceTree = "<group>"; };
 		3BA349592120494C008E2FE8 /* FYHOrderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHOrderDetailView.swift; sourceTree = "<group>"; };
 		3BA3495B21204958008E2FE8 /* FYHOrderDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FYHOrderDetailView.xib; sourceTree = "<group>"; };
+		3BCA7F4E212075790076FFC0 /* FYHOrderClickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHOrderClickView.swift; sourceTree = "<group>"; };
 		3BF7646D211DEE74008F8AF4 /* FTHProductContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTHProductContentViewController.swift; sourceTree = "<group>"; };
 		7A506653BCB51DA7451CCD05 /* Pods-FYHire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYHire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FYHire/Pods-FYHire.debug.xcconfig"; sourceTree = "<group>"; };
 		844E564D211818210058EFCE /* FYHire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYHire.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +166,7 @@
 			children = (
 				3BA3495821204931008E2FE8 /* FYHOrderDetailView */,
 				3BA34957212036E6008E2FE8 /* FYHOrderTableCell */,
+				3BCA7F4E212075790076FFC0 /* FYHOrderClickView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -468,6 +471,7 @@
 				3B7C9523211ED02F00A69381 /* FTHProductCommentCell.swift in Sources */,
 				3B39CFC3211EF2F6001FB8C0 /* FYHProductListController.swift in Sources */,
 				3B7C951B211E68E100A69381 /* FTHProductIntroduceView.swift in Sources */,
+				3BCA7F4F212075790076FFC0 /* FYHOrderClickView.swift in Sources */,
 				84D26F54211934B700F41EC5 /* BaseViewController.swift in Sources */,
 				84D26F5C2119762500F41EC5 /* UIButton-FYHExtension.swift in Sources */,
 				3BA34956212036D2008E2FE8 /* FYHOrderDetailController.swift in Sources */,
