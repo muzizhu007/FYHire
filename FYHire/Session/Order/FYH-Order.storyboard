@@ -66,7 +66,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j9k-88-Rn8">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="870"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XTh-v7-NgB">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XTh-v7-NgB" customClass="FYHOrderDetailView" customModule="FYHire" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="570"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>

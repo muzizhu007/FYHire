@@ -10,7 +10,13 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FYHOrderDetailView" customModule="FYHire" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FYHOrderDetailView" customModule="FYHire" customModuleProvider="target">
+            <connections>
+                <outlet property="addressBackView" destination="kPG-6J-Dql" id="nR4-Li-AdV"/>
+                <outlet property="addressLabel" destination="4k1-W3-Ah3" id="i25-gM-bF2"/>
+                <outlet property="userLabel" destination="irX-1h-o0x" id="fnf-BW-3AM"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -18,9 +24,47 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kPG-6J-Dql">
                     <rect key="frame" x="15" y="35" width="345" height="80"/>
-                    <color key="backgroundColor" red="0.76078431369999999" green="0.76078431369999999" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_location_address" translatesAutoresizingMaskIntoConstraints="NO" id="sJz-kJ-qyd">
+                            <rect key="frame" x="12" y="32" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="AXn-ZE-sDp"/>
+                                <constraint firstAttribute="height" constant="16" id="nRX-Xe-YAh"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="浙江省 杭州市 余杭区 顺帆科创园6幢B区802" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4k1-W3-Ah3">
+                            <rect key="frame" x="37" y="18" width="293" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金会亮   15845689656" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="irX-1h-o0x">
+                            <rect key="frame" x="37" y="49" width="293" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_address_more" translatesAutoresizingMaskIntoConstraints="NO" id="8lB-Ci-UG5">
+                            <rect key="frame" x="319" y="32" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="7Ws-xt-ZbJ"/>
+                                <constraint firstAttribute="width" constant="16" id="ozz-zO-3JD"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstItem="sJz-kJ-qyd" firstAttribute="centerY" secondItem="kPG-6J-Dql" secondAttribute="centerY" id="091-tk-WZn"/>
+                        <constraint firstItem="irX-1h-o0x" firstAttribute="leading" secondItem="4k1-W3-Ah3" secondAttribute="leading" id="2dO-bJ-gJU"/>
+                        <constraint firstItem="irX-1h-o0x" firstAttribute="top" secondItem="4k1-W3-Ah3" secondAttribute="bottom" constant="15" id="3et-se-9ue"/>
+                        <constraint firstItem="sJz-kJ-qyd" firstAttribute="leading" secondItem="kPG-6J-Dql" secondAttribute="leading" constant="12" id="FHg-5f-vTT"/>
+                        <constraint firstAttribute="trailing" secondItem="8lB-Ci-UG5" secondAttribute="trailing" constant="10" id="VIR-dd-Jfa"/>
                         <constraint firstAttribute="height" constant="80" id="Ynn-4t-CHP"/>
+                        <constraint firstItem="4k1-W3-Ah3" firstAttribute="leading" secondItem="sJz-kJ-qyd" secondAttribute="trailing" constant="9" id="bLi-Q4-t2E"/>
+                        <constraint firstItem="8lB-Ci-UG5" firstAttribute="centerY" secondItem="sJz-kJ-qyd" secondAttribute="centerY" id="gdz-MV-dxo"/>
+                        <constraint firstAttribute="trailing" secondItem="4k1-W3-Ah3" secondAttribute="trailing" constant="15" id="nmd-Qr-nqV"/>
+                        <constraint firstItem="irX-1h-o0x" firstAttribute="trailing" secondItem="4k1-W3-Ah3" secondAttribute="trailing" id="uVg-Zb-7TY"/>
+                        <constraint firstItem="4k1-W3-Ah3" firstAttribute="top" secondItem="kPG-6J-Dql" secondAttribute="top" constant="18" id="zzK-ZM-Z8P"/>
                     </constraints>
                 </view>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_iphone_pro_slices" translatesAutoresizingMaskIntoConstraints="NO" id="YXm-eq-thP">
@@ -242,6 +286,8 @@
         </view>
     </objects>
     <resources>
+        <image name="btn_address_more" width="5" height="9"/>
+        <image name="icon_location_address" width="13" height="16"/>
         <image name="img_iphone_pro_slices" width="119" height="139"/>
     </resources>
 </document>
