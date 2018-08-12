@@ -33,7 +33,6 @@ class FYHOrderTableViewController: BaseViewController, UITableViewDataSource, UI
         orderTableView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
         }
-        
     }
     
     //MARK - tableview delegate
@@ -47,7 +46,8 @@ class FYHOrderTableViewController: BaseViewController, UITableViewDataSource, UI
         
         var cell:FYHOrderTableCell! = tableView.dequeueReusableCell(withIdentifier: indentifier)as?FYHOrderTableCell
         if cell == nil {
-            cell = FYHOrderTableCell(style: .default, reuseIdentifier: indentifier)
+            //通过xib的方式加载单元格
+            cell = Bundle.main.loadNibNamed("FYHOrderTableCell" , owner: nil, options: nil)?.first as! FYHOrderTableCell
         }
         
         return cell

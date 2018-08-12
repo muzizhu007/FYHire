@@ -9,16 +9,7 @@
 import UIKit
 
 class FYHOrderTableCell: UITableViewCell {
-    @IBOutlet weak var statusLabel: UILabel!
-    @IBOutlet weak var productImage: UIImageView!
-    @IBOutlet weak var productName: UILabel!
-    @IBOutlet weak var colorLabel: UILabel!
-    @IBOutlet weak var netLabel: UILabel!
-    @IBOutlet weak var cacheLabel: UILabel!
-    @IBOutlet weak var orderLabel: UILabel!
-    @IBOutlet weak var commentLabel: UILabel!
-    @IBOutlet weak var timeLabel: UILabel!
-    @IBOutlet weak var confirmButton: UIButton!
+
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,5 +21,21 @@ class FYHOrderTableCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        setUpUI()
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        setUpUI()
+    }
 
+    private func setUpUI() {
+        self.layer.shadowColor = UIColor.gray.cgColor
+        self.layer.shadowOpacity = 0.8
+        self.layer.shadowOffset = CGSize.init(width: 0, height: 0)
+    }
+    
 }
