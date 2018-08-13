@@ -17,5 +17,11 @@ extension UIView {
         
         layer.mask = cornerLayer
     }
+    
+    func addClickAction(_ action:Selector, tapHandler target: Any = self) {
+        let tapGesture = UITapGestureRecognizer(target:target, action:action)
+        tapGesture.numberOfTapsRequired = 1
+        self.addGestureRecognizer(tapGesture)
+    }
 }
 

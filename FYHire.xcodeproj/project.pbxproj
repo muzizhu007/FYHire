@@ -32,6 +32,13 @@
 		3BA3495C21204958008E2FE8 /* FYHOrderDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BA3495B21204958008E2FE8 /* FYHOrderDetailView.xib */; };
 		3BCA7F4F212075790076FFC0 /* FYHOrderClickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BCA7F4E212075790076FFC0 /* FYHOrderClickView.swift */; };
 		3BF7646E211DEE74008F8AF4 /* FTHProductContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF7646D211DEE74008F8AF4 /* FTHProductContentViewController.swift */; };
+		842118B12121824800A934FA /* FYHMeClickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842118B02121824800A934FA /* FYHMeClickView.swift */; };
+		842118B32121A78A00A934FA /* FYHUserIDUploadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842118B22121A78A00A934FA /* FYHUserIDUploadController.swift */; };
+		842118B52121A82100A934FA /* FYHUserCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842118B42121A82100A934FA /* FYHUserCollectionController.swift */; };
+		842118B72121A86600A934FA /* FYHUserCommentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842118B62121A86600A934FA /* FYHUserCommentController.swift */; };
+		842118B92121A8DE00A934FA /* FYHUserProblemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842118B82121A8DE00A934FA /* FYHUserProblemController.swift */; };
+		842118BB2121A8FC00A934FA /* FYHSystemHelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842118BA2121A8FC00A934FA /* FYHSystemHelpController.swift */; };
+		842118BD2121A91200A934FA /* FYHSystemSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842118BC2121A91200A934FA /* FYHSystemSettingController.swift */; };
 		844E5651211818210058EFCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5650211818210058EFCE /* AppDelegate.swift */; };
 		844E5653211818210058EFCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844E5652211818210058EFCE /* ViewController.swift */; };
 		844E5656211818210058EFCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844E5654211818210058EFCE /* Main.storyboard */; };
@@ -78,6 +85,13 @@
 		3BCA7F4E212075790076FFC0 /* FYHOrderClickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHOrderClickView.swift; sourceTree = "<group>"; };
 		3BF7646D211DEE74008F8AF4 /* FTHProductContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FTHProductContentViewController.swift; sourceTree = "<group>"; };
 		7A506653BCB51DA7451CCD05 /* Pods-FYHire.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYHire.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FYHire/Pods-FYHire.debug.xcconfig"; sourceTree = "<group>"; };
+		842118B02121824800A934FA /* FYHMeClickView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHMeClickView.swift; sourceTree = "<group>"; };
+		842118B22121A78A00A934FA /* FYHUserIDUploadController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHUserIDUploadController.swift; sourceTree = "<group>"; };
+		842118B42121A82100A934FA /* FYHUserCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHUserCollectionController.swift; sourceTree = "<group>"; };
+		842118B62121A86600A934FA /* FYHUserCommentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHUserCommentController.swift; sourceTree = "<group>"; };
+		842118B82121A8DE00A934FA /* FYHUserProblemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHUserProblemController.swift; sourceTree = "<group>"; };
+		842118BA2121A8FC00A934FA /* FYHSystemHelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHSystemHelpController.swift; sourceTree = "<group>"; };
+		842118BC2121A91200A934FA /* FYHSystemSettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYHSystemSettingController.swift; sourceTree = "<group>"; };
 		844E564D211818210058EFCE /* FYHire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYHire.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		844E5650211818210058EFCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		844E5652211818210058EFCE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -122,8 +136,15 @@
 		3B1CBA542119CDA500CDC2C2 /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				842118AF2121822B00A934FA /* View */,
 				3B1CBA5B2119D25B00CDC2C2 /* FYH-Me.storyboard */,
 				3B1CBA612119D28D00CDC2C2 /* FYHMeViewController.swift */,
+				842118B22121A78A00A934FA /* FYHUserIDUploadController.swift */,
+				842118B42121A82100A934FA /* FYHUserCollectionController.swift */,
+				842118B62121A86600A934FA /* FYHUserCommentController.swift */,
+				842118B82121A8DE00A934FA /* FYHUserProblemController.swift */,
+				842118BA2121A8FC00A934FA /* FYHSystemHelpController.swift */,
+				842118BC2121A91200A934FA /* FYHSystemSettingController.swift */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -187,6 +208,14 @@
 				3BA3495B21204958008E2FE8 /* FYHOrderDetailView.xib */,
 			);
 			path = FYHOrderDetailView;
+			sourceTree = "<group>";
+		};
+		842118AF2121822B00A934FA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				842118B02121824800A934FA /* FYHMeClickView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		844E5644211818210058EFCE = {
@@ -473,19 +502,26 @@
 				3B7C951B211E68E100A69381 /* FTHProductIntroduceView.swift in Sources */,
 				3BCA7F4F212075790076FFC0 /* FYHOrderClickView.swift in Sources */,
 				84D26F54211934B700F41EC5 /* BaseViewController.swift in Sources */,
+				842118BD2121A91200A934FA /* FYHSystemSettingController.swift in Sources */,
+				842118BB2121A8FC00A934FA /* FYHSystemHelpController.swift in Sources */,
 				84D26F5C2119762500F41EC5 /* UIButton-FYHExtension.swift in Sources */,
 				3BA34956212036D2008E2FE8 /* FYHOrderDetailController.swift in Sources */,
 				3BA3494F211FE81A008E2FE8 /* FYHOrderTableViewController.swift in Sources */,
+				842118B12121824800A934FA /* FYHMeClickView.swift in Sources */,
 				3B1CBA622119D28D00CDC2C2 /* FYHMeViewController.swift in Sources */,
 				849349D9211AF9CC00BB1C0B /* FYHHomeProductView.swift in Sources */,
 				844E5651211818210058EFCE /* AppDelegate.swift in Sources */,
 				3B1CBA642119D29900CDC2C2 /* FYHOrderViewController.swift in Sources */,
+				842118B72121A86600A934FA /* FYHUserCommentController.swift in Sources */,
+				842118B52121A82100A934FA /* FYHUserCollectionController.swift in Sources */,
+				842118B92121A8DE00A934FA /* FYHUserProblemController.swift in Sources */,
 				3B4CEB2D211C9E880007E233 /* CoolSlidingMenuView.swift in Sources */,
 				84D26F502119324900F41EC5 /* FYUnderLineTextField.swift in Sources */,
 				849349DD211B0AC800BB1C0B /* FYHHomeSectionView.swift in Sources */,
 				3BA34952211FE944008E2FE8 /* FYHOrderTableCell.swift in Sources */,
 				3B1CBA602119D28200CDC2C2 /* FYHHomeViewController.swift in Sources */,
 				3B39CFC1211EEFA1001FB8C0 /* FTHProductTableViewCell.swift in Sources */,
+				842118B32121A78A00A934FA /* FYHUserIDUploadController.swift in Sources */,
 				3B7C951F211EB20D00A69381 /* UIView-FYHExtension.swift in Sources */,
 				84ACD396211C63CC0038B88B /* UIColor-FYHExtension.swift in Sources */,
 			);
